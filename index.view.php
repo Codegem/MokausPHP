@@ -58,7 +58,7 @@
         <ul>
             <?php foreach($workers[$id] as $list2):?>
                 <li>
-                    <?=$list2;?>
+                    <?php if(substr($list2, -1) == "a"){echo $list2;}?>
                 </li>
                 <?php endforeach ?>
         </ul>
